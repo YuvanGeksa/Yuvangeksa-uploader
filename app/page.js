@@ -110,7 +110,7 @@ async function uploadFilesContentsApi({ token, owner, repo, branch, files, commi
   let done = 0;
   const total = files.length;
 
-  const concurrency = 6;
+  const concurrency = 1;
   let idx = 0;
 
   async function worker() {
